@@ -4,6 +4,8 @@ only included
 
 https://github.com/flwyd/rails_sql_views/commit/f9615495eb1dde3c8f1158040544feb3036cb64c
 
+and added mysql2 from webhornchens reposistory
+
 
 
 == Rails SQL Views
