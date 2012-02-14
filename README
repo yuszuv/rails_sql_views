@@ -1,3 +1,11 @@
+=== THIS IS A FORK ===
+
+only included
+
+https://github.com/flwyd/rails_sql_views/commit/f9615495eb1dde3c8f1158040544feb3036cb64c
+
+
+
 == Rails SQL Views
 
 Library which adds SQL Views to Rails. Adds create_view and drop_view to the ActiveRecord::ConnectionAdapters::AbstractAdapter (which makes them available to migrations) and adds support for dumping views in the ActiveRecord::SchemaDumper.
