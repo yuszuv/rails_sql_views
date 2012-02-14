@@ -29,7 +29,7 @@ module RailsSqlViews
             create_sql << view_definition.to_sql
             create_sql << ") " 
           end
-          if view_definitions.select_query.include?("CREATE")
+          if !view_definitions.nil? && view_definitions.select_query.include?("CREATE")
             create_sql = "#{view_definition.select_query}" 
           else
             create_sql << "AS #{view_definition.select_query}" 
