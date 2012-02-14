@@ -29,7 +29,11 @@ module RailsSqlViews
             create_sql << view_definition.to_sql
             create_sql << ") " 
           end
-          create_sql << "AS #{view_definition.select_query}"
+          if view_definitions.select_query.include?("CREATE")
+            create_sql = "#{view_definition.select_query}" 
+          else
+            create_sql << "AS #{view_definition.select_query}" 
+          end
           create_sql << " WITH #{options[:check_option]} CHECK OPTION" if options[:check_option]
           execute create_sql
         end
